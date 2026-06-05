@@ -594,6 +594,12 @@ body a{
             aspect-ratio: 1/1;
             width: 100%;
         }
+        .actual-card > a > img{
+            margin-left: 0;
+            aspect-ratio: 1/1;
+            width: 100%;
+
+        }
         .actual-card > div{
             position:relative;
         }
@@ -696,6 +702,9 @@ body a{
     }
     .addCard{
         display: grid;
+    }
+    .addCard > a{
+        margin-top: 0px;
     }
     .align-cards{
         grid-template-columns: 1fr 1fr 1fr;

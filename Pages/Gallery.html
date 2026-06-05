@@ -8,7 +8,12 @@
     <link rel="stylesheet" href="../Styles/hamburger.css">
     <link rel="stylesheet" href="../Styles/style.css">
     <link rel="stylesheet" href="../Styles/card.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/css/lightgallery-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/lightgallery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.2/plugins/zoom/lg-zoom.min.js"></script>
     <script src="../Styles/hamburger.js"></script>
+    <script src="../styles/lightGallery.js"></script>
 </head>
 <body>
     <header>
@@ -45,25 +50,31 @@
             </ul>
         </nav>
     </header>
-    <section>
+    <section id="gallery-container">
         <p class="ordinaryText h2 type2 card-head">Enviroments</p>
         <div class="align-cards">
             <div class="card actual-card">
-                <img src="../styles/images/Moon.png" alt="Image of moon station"> <!--Nikdo si nevšimne že je to jen budova na zemi-->>
+                <a href="../styles/images/Moon.png" class="">
+                    <img src="../styles/images/Moon.png" alt="Image of moon station">
+                </a>
                 <div class="card-description">
                     <p class="h3">Moon station</p>
                     <p class="h4">A large nasa station on the moon. It contains terrain, vehicles, characters and effects. Feel free to try their meal!</p>
                 </div>
             </div>
             <div class="card actual-card">
-                <img src="../styles/images/Forest.png" alt="Image of dark forest">
+                <a href="../styles/images/Forest.png" class="">
+                    <img src="../styles/images/Forest.png" alt="Image of dark forest">
+                </a>
                 <div class="card-description">
                     <p class="h3">Dark forest</p>
                     <p class="h4">Dark Forest contains forest, hut and several monsters. Bet you don't want to stay there.</p>
                 </div>
             </div>
             <div class="card actual-card addCard">
-                <img src="../styles/images/Castle.png" alt="Image of medival castle">
+                <a href="../styles/images/Castle.png" class="">
+                    <img src="../styles/images/Castle.png" alt="Image of medival castle">
+                </a>
                 <div class="card-description">
                     <p class="h3">Medival Castle</p>
                     <p class="h4">There is everything there that you could see in real life. Just... try not to be seen by anyone when stealing something...</p>
@@ -73,21 +84,27 @@
         <p class="ordinaryText h2 type2 card-head">Characters</p>
         <div class="align-cards">
             <div class="card actual-card">
-                <img src="../styles/images/RandomPattern.png" alt="Placeholder for a character image">
+                <a href="../styles/images/RandomPattern.png" class="">
+                    <img src="../styles/images/RandomPattern.png" alt="Placeholder for a character image">
+                </a>
                 <div class="card-description">
                     <p class="h3">Funny clown</p>
                     <p class="h4">As the name suggests, he is clown, but don't be fooled. if you make fun of him... it won't end well...</p>
                 </div>
             </div>
             <div class="card actual-card">
-                <img src="../styles/images/RandomPattern.png" alt="Placeholder for a character image">
+                <a href="../styles/images/RandomPattern.png" class="">
+                    <img src="../styles/images/RandomPattern.png" alt="Placeholder for a character image">
+                </a>
                 <div class="card-description">
                     <p class="h3">Hyena</p>
                     <p class="h4">World's best vacuum cleaner. Call him, and he'll make sure nothing is left in your house.</p>
                 </div>
             </div>
             <div class="card actual-card addCard">
-                <img src="../styles/images/RandomPattern.png" alt="Placeholder for a character image">
+                <a href="../styles/images/RandomPattern.png">
+                    <img src="../styles/images/RandomPattern.png" alt="Placeholder for a character image">
+                </a>
                 <div class="card-description">
                     <p class="h3">Lizard</p>
                     <p class="h4">...It's a lizard... there is no deeper meaning behind it...</p>
@@ -97,21 +114,27 @@
         <p class="ordinaryText h2 type2 card-head">Music Videos</p>
         <div class="align-cards">
             <div class="card actual-card">
-            <img src="../styles/images/Looping the rooms.jpg" alt="Looping image">
+                <a href="../styles/images/Looping the rooms.jpg">
+                    <img src="../styles/images/Looping the rooms.jpg" alt="Looping image">
+                </a>
                 <div class="card-description">
                     <p class="h3">Looping the rooms</p>
                     <p class="h4">I hope you know what this is</p>
                 </div>
             </div>
             <div class="card actual-card">
-                <img src="../styles/images/Still alive.jpg" alt="Image of French Mirage-2000"> <!--Na začátku to vypadalo jako švédská stíhačka...-->
+                <a href="../styles/images/Still alive.jpg">
+                    <img src="../styles/images/Still alive.jpg" alt="Image of French Mirage-2000"> <!--Na začátku to vypadalo jako švédská stíhačka...-->
+                </a>
                 <div class="card-description">
                     <p class="h3">Still alive</p>
                     <p class="h4">I hope so...</p>
                 </div>
             </div>
             <div class="card actual-card addCard">
-                <img src="../styles/images/RickRoll.png" alt="Look who was just rick rolled!">
+                <a href="../styles/images/RickRoll.png">
+                    <img src="../styles/images/RickRoll.png" alt="Look who was just rick rolled!">
+                </a>
                 <div class="card-description">
                     <p class="h3">Rick Roll</p>
                     <p class="h4">...</p>
