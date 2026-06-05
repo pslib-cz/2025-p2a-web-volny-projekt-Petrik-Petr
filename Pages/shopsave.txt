@@ -1,0 +1,63 @@
+        <p class="ordinaryText h2 type2 card-head">Enviroments</p>
+        <div class="card">
+            <img src="../styles/images/Forest.png" alt="Image of AI generated forest">
+            <a href="#">
+                <div class="price rowEm ordinaryText h3">
+                    <p>19.99$</p>
+                    <img src="../styles/icons/Cart.svg" alt="Add to cart" class="arrow">
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <img src="../styles/images/Castle.png" alt="Image of AI generated forest">
+            <a href="#">
+                <div class="price rowEm ordinaryText h3">
+                    <p>24.99$</p>
+                    <img src="../styles/icons/Cart.svg" alt="Add to cart" class="arrow">
+                </div>
+            </a>
+        </div>
+        <p class="ordinaryText h3 type2 card-head">Characters</p>
+        <div class="card">
+            <img src="../styles/images/RandomPattern.png" alt="Image of AI generated forest">
+            <a href="#">
+                <div class="price rowEm ordinaryText h3">
+                    <p>15.99$</p>
+                    <img src="../styles/icons/Cart.svg" alt="Add to cart" class="arrow">
+                </div>
+            </a>
+            </div>
+            <div class="card">
+            <img src="../styles/images/RandomPattern.png" alt="Image of AI generated forest">
+            <a href="#">
+                <div class="price rowEm ordinaryText h3">
+                    <p>5.99$</p>
+                    <img src="../styles/icons/Cart.svg" alt="Add to cart" class="arrow">
+                </div>
+            </a>
+        </div>
+        <p class="ordinaryText h3 type2 card-head">Models</p>
+        <div class="card">
+            <img src="../styles/images/RickRoll.png" alt="Image of AI generated forest">
+            <a href="#">
+                <div class="price rowEm ordinaryText h3">
+                    <p>0.00$</p>
+                    <img src="../styles/icons/Cart.svg" alt="Add to cart" class="arrow">
+                </div>
+            </a>
+        </div>
+        <div class="card">
+            <img src="../styles/images/Looping the rooms.jpg" alt="Image of AI generated forest">
+            <a href="#">
+                <div class="price rowEm ordinaryText h3">
+                    <p>46.58$</p>
+                    <img src="../styles/icons/Cart.svg" alt="Add to cart" class="arrow">
+                </div>
+            </a>
+        </div>
+        <a href="./404.html" class="rowEm ordinaryText h2 type1">
+            <p>Go to the cart</p>
+            <img src="../styles//icons/arrows.svg" alt="Arrow to right" class="arrow">
+        </a>
+
+

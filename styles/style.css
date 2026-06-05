@@ -1,0 +1,705 @@
+
+/* Pokud tohle někdo čte, potom se předem omlouvám za újmu na mentálním zdraví... */
+
+html {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-family: 'Etiquette';
+    height: 100%;
+}
+@font-face {
+    font-family: 'Etiquette';
+    src: url('/CSSTransition-HamburgerJS/styles/ETIQUETTE.OTF') format('opentype');
+}
+@layer ordinaryText, price, section, p;
+body {
+    margin: 0;
+    background-color: var(--darkGrey-color);
+    --h1:48px;/*128px;*/
+    --h2:24px;/*36px;*/
+    --h3:20px;/*32px;*/
+    --h4:18px;/*24px;*/
+    --h5:16px;/*20px;*/
+    --type0:.25rem;/*.5rem;*/
+    --type1:.5rem;/*1rem;*/
+    --type2:.75rem;/*2.5rem;*/
+    --type3:1rem;/*3.5rem;*/
+    --type4:1.25rem;/*5rem;*/
+    --type5:1.5rem;/*6.5rem;*/
+    --logo:'./styles/LogoD.svg';
+    letter-spacing: .1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    --light-color:rgb(225,225,225);/*rgb(26,26,26)*/
+    --dark-color:rgb(26,26,26);/*rgb(225,225,225)*/
+    --darkGrey-color:rgb(75,75,75);/*rgb(138,138,138)*/
+    --lightGrey-color:rgb(138,138,138);/*rgb(75,75,75)*/
+    --modeIcon:"⏾";/*"☼"*/
+    --mode:"Dark mode";/*"Dark mode"*/
+}
+footer{
+    margin-top: auto;
+}
+@layer hamburgerThing{
+    .studioName{
+        display: none;
+    }
+    .logo{
+        width: auto;
+        height: 67px;
+    }
+    .hamburger-row {
+        padding: var(--type1);
+        background-color:var(--light-color);
+        display: flex;
+        justify-content: space-between;
+        width: -webkit-fill-available;
+        position: relative;
+    }
+    .mode::before{
+        content: var(--mode);
+    }
+    .mode-icon::before{
+        content: var(--modeIcon);
+    }
+    .hamburger {
+        display: block;
+    }
+    .hamburger span{
+        background-color: var(--dark-color);
+    }
+    .hamburger-nav {
+        background-color:var(--light-color);
+        border-top: 1px solid var(--dark-color);
+        border-bottom: 1px solid var(--dark-color);
+        font-size: var(--h3);
+    }
+    .hamburger-nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    .hamburger-nav li {
+        display: block;
+        padding: 0.25em 1em;
+        text-align: center;
+        border-bottom: 1px solid var(--dark-color);
+    }
+    .hamburger-nav a{
+        width: -webkit-fill-available;
+        color: var(--dark-color);
+    }
+    /* .hamburger-nav li:nth-child(even) {
+        background-color: rgba(0, 0, 0, 0.1);
+    } */
+    .hamburger-nav li:hover {
+        background-color: var(--dark-color);
+        color: var(--light-color);
+    }
+    .hamburger-btn{
+        border-radius: .5em;
+        border: 1px solid var(--dark-color);
+        padding: 10px;
+    }
+    .hamburger-zone > ul > li{
+        font-size: var(--h3);
+    }
+}
+@layer card{
+    .card{
+        /* --light-color:rgb(225,225,225); */
+        /* --dark-color:rgb(26,26,26); */
+        /* --darkGrey-color:rgb(75,75,75); */
+        /* --lightGrey-color:rgb(138,138,138); */
+        overflow: hidden;
+        padding-top: 1rem;
+        gap: .5rem;
+        display: grid;
+        position: relative;
+    }
+    .card img:not(.arrow){
+        display: block;
+        width: calc(100vw - (var(--type3) + var(--type3)) * 2);
+        margin: 0 auto;
+        aspect-ratio: 4/3;
+        object-fit:cover;
+    }
+    .card > div{
+        display: none;
+    }
+    .card-description{
+        display: none;
+    }
+    .imageType{}
+    .imageType1 > p{
+        display: none;
+    }
+    .card-head{
+        margin-bottom: var(--type1);
+    }
+    .actual-card{}
+    @layer price{
+        .price{
+            position: absolute;
+            bottom: 0;
+            width:  calc(100vw - (var(--type1) + var(--type3)) * 2);
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+body a{
+    text-decoration:none;
+}
+@layer section{
+    section{
+        padding-top: calc(var(--type1) + var(--type0));
+        justify-items: center;
+    }
+    section > *{
+        margin-bottom: 2rem;
+    }
+}
+.buttons{
+    grid-column: span 5;
+}
+@layer p{
+    p{
+        margin: 0;
+        overflow-wrap: anywhere;
+    }
+}
+.arrow{
+    height: calc(var(--type1) + var(--type1));
+    width: calc(var(--type1) + var(--type1));
+}
+.uniqueText{
+    justify-items: center;
+    background-color: var(--light-color);
+    padding-top: var(--type1);
+    padding-bottom: var(--type1);
+}
+.writeIn{
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow-wrap: anywhere;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.noHitbox{
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+}
+.visitShopButton::before{
+    content: "Visit our shop";
+}
+@layer ordinaryText{
+    .ordinaryText{
+        color: var(--light-color);
+        background-color: var(--dark-color);
+        text-align: center;
+        padding: var(--type1);
+        padding-top: var(--type0);
+        display: grid;
+        width: -webkit-fill-available;
+        gap: var(--type1);
+    }
+}
+.rowEm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--type1);
+}
+.toRight{
+    display: flex;
+    justify-content: right;
+    gap: var(--type1);
+}
+.toRight > p{
+    width: max-content;
+}
+.toLeft{
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    margin-top: var(--type0);
+    margin-bottom: var(--type0);
+    justify-content: left;
+    margin: 0px;
+}
+.toLeft > a > p{
+    width: fit-content;
+}
+.dotPlace{
+    height: var(--type1);
+    width: var(--type1);
+    border-radius: 100%;
+    border: solid .15rem var(--dark-color);
+}
+.tagStroke{
+    outline: solid var(--type0) var(--dark-color);/*tohle jsem použil poprvé...*/
+}
+.tags{
+    padding-top: var(--type0);
+    padding-bottom: var(--type0);
+    border-radius: var(--type0);
+}
+.tags > a + a{
+    margin-top: var(--type0);
+}
+.textArea > div + div,a{
+    margin-top: var(--type0);
+}
+.textArea > .tags{
+    padding-left: var(--type0);
+    padding-right: var(--type0);
+}
+.textArea > .tags > div{
+    border-radius: var(--type0);
+}
+.sendButton{
+    padding-bottom: calc(var(--type1) + var(--type0));
+    padding-top: var(--type1);
+}
+.tagWidth{
+    width: -webkit-fill-available;
+    padding-left: var(--type0);
+}
+.type0H{
+    margin-top: var(--type0);
+    margin-bottom: var(--type0);
+}
+.list{
+    padding: auto;
+}
+.h1{
+    font-size: var(--h1);
+}
+.h2{
+    font-size: var(--h2);
+}
+.h3{
+    font-size: var(--h3);
+}
+.h4{
+    font-size: var(--h4);
+}
+.h5{
+    font-size: var(--h5);
+}
+.type0{width: -webkit-fill-available; margin-left: var(--type0); margin-right: var(--type0);}
+.type1{width: -webkit-fill-available; margin-left: var(--type1); margin-right: var(--type1);}
+.type2{width: -webkit-fill-available; margin-left: var(--type2); margin-right: var(--type2);}
+.type3{width: -webkit-fill-available; margin-left: var(--type3); margin-right: var(--type3);}
+.type4{width: -webkit-fill-available; margin-left: var(--type4); margin-right: var(--type4);}
+.type5{width: -webkit-fill-available; margin-left: var(--type5); margin-right: var(--type5);}
+.noBulletPoint{
+    list-style: none;
+    justify-items: center;
+    padding: 0;
+    margin: 0;
+    display: grid;
+}
+.uniqueText > *{
+    color: var(--dark-color);
+}
+.ordinaryText > *{
+    color: var(--light-color);
+}
+.list{
+    padding-left: var(--type0);
+    padding-right: var(--type0);
+}
+.lightColor{/*Ať nemusím dělat na každou vyjímku celou novou třídu...*/
+    color: var(--light-color);
+}
+.darkColor{
+    color: var(--dark-color);
+}
+.backHome{
+    width: min-content;
+    justify-self: center;
+}
+.backHome *{
+    width: max-content;
+}
+.headerIcons{}
+.align-cards{}
+.footer > a{
+    display: none;
+}
+.contact{}
+.shop-card{}
+.homeLeftCol{}
+.homeRightCol{}
+.eliminate1280{}
+.appear1280{
+    display: none;
+}
+.addCard{
+    display: none;
+}
+.card-list{}
+.picture-description{}
+@media screen and (min-width: 639px) and (max-width: 1279px) {
+    body{
+        --h1:128px;
+        --h2:36px;
+        --h3:32px;
+        --h4:24px;
+        --h5:20px;
+        --type0:.5rem;
+        --type1:1rem;
+        --type2:2.5rem;
+        --type3:3.5rem;
+        --type4:5rem;
+        --type5:6.5rem;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    footer{
+        margin-top: auto;
+    }
+    @layer card, cardDesc;
+    .addCard{
+        display: none !important;
+    }
+    .logo{
+        width: auto;
+        height: var(--type4);
+    }
+    .contact{
+        display: flex;
+        justify-content: space-around;
+    }
+    .imageType{
+        display: none;
+    }
+    .imageType1 > div{
+        display: block;
+    }
+    .price{
+        position: relative;
+        width: 100%;
+    }
+    .shop-card{
+        display: grid;
+    }
+    .shop-card > a{
+        align-self: end;
+    }
+    @layer card{
+        .card img:not(.arrow){
+            display: block;
+            width: calc(100vw - var(--type5) * 3);
+            max-width: 50vw;
+            margin: 0;
+            aspect-ratio: 6.5/10;
+            object-fit: cover;
+            margin-right: calc(var(--type3) * -3);
+            overflow: hidden;
+        }
+        .card > div{
+            display: grid;
+            position: absolute;
+            top: 20vw;
+            gap: var(--type0);
+            justify-items: left;
+            text-align: left;
+            overflow: visible;
+            margin-left: calc((-12vw - (var(--type1) + var(--type0)))*2); /*Vím že je tohle hodně hnusný...*/
+            margin-right: calc(var(--type3)*-1);
+        }
+        .card{
+            position: relative;
+            overflow: visible;
+            gap: 0;
+            padding-top: 0;
+        }
+        .card-head{
+            width: -webkit-fill-available;
+            margin-left: var(--type5);
+            margin-right: var(--type5)
+        }
+    }
+    @layer cardDesc{
+        .card-description{
+            display: grid;
+            background-color: var(--light-color);
+            margin-left: 0;
+            margin-right: 0;
+            top: 0;
+            padding: var(--type0);
+            padding-bottom: 1fr;
+        }
+        .actual-card{
+            display: block;
+            position:relative;
+            margin-left: 0;
+            overflow: hidden;
+            border-radius: var(--type0);
+            outline: solid calc(var(--type0)/2) var(--dark-color);
+            background-color: var(--light-color);
+        }
+        .actual-card > img{
+            margin-left: 0;
+            aspect-ratio: 1/1;
+            max-width: 100%;
+        }
+        .actual-card > a > img{
+            margin-left: 0;
+            aspect-ratio: 1/1;
+            max-width: 100%;
+        }
+        .actual-card > div{
+            position:relative;
+        }
+    }
+    .align-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--type2);
+        margin-left: var(--type2);
+        margin-right: var(--type2);
+    }
+    .footer{
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer > .ordinaryText{
+        width: calc(var(--type4)*2);
+        margin-right: var(--type1);
+        margin-left: var(--type1);
+    }
+    .footer > a > .logo{
+        margin-left: var(--type1);
+        margin-right: var(--type1);
+    }
+    .footer > a{
+        display: grid;
+    }
+    .noBulletPoint{
+        display: flex;
+        gap: var(--type1);
+    }
+    .visitShopButton::before{
+        content: "choose one of our products in the shop section!";
+    }
+    .headerIcons{
+        height: calc(var(--type1)*2);
+        width: calc(var(--type1)*2);
+    }
+}
+@media screen and (min-width:1280px) {
+    /*Omylem jsem sem vložil všechno css z minulého css modu a nevím co je změněný a co ne ._____.*/
+    body{
+        --h1:128px;
+        --h2:36px;
+        --h3:32px;
+        --h4:24px;
+        --h5:20px;
+        --type0:.5rem;
+        --type1:1rem;
+        --type2:2.5rem;
+        --type3:3.5rem;
+        --type4:5rem;
+        --type5:6.5rem;
+    }
+    @layer card, cardDesc;
+    section > .uniqueText, .list, .type2, .tags, .tagStroke, .appear1280{
+        width: -webkit-fill-available;
+    }
+    .logo{
+        width: auto;
+        height: var(--type3);
+    }
+    .contact{
+        display: flex;
+        justify-content: space-around;
+    }
+    .imageType{
+        display: none;
+    }
+    .imageType1 > div{
+        display: block;
+    }
+    .price{
+        position: relative;
+        width: 100%;
+    }
+    .shop-card{
+        display: grid;
+    }
+    .shop-card > a{
+        align-self: end;
+    }
+    @layer card{
+        .card img:not(.arrow){
+            display: block;
+            width: calc(40vw - var(--type5) * 3);
+            max-width: 50vw;
+            margin: 0;
+            aspect-ratio: 6.5/10;
+            object-fit: cover;
+            margin-right: calc(var(--type3) * -3);
+            overflow: hidden;
+        }
+        .card > div{
+            display: grid;
+            position: absolute;
+            bottom: 10vw;
+            gap: var(--type0);
+            justify-items: left;
+            text-align: left;
+            overflow: visible;
+            margin-left: var(--type2);
+            margin-right: calc(var(--type3)*-1);
+        }
+        .card{
+            position: relative;
+            overflow: visible;
+            gap: 0;
+            padding-top: 0;
+        }
+        .card-head{
+            width: -webkit-fill-available;
+            margin-left: var(--type5);
+            margin-right: var(--type5)
+        }
+    }
+    @layer cardDesc{
+        .card-description{
+            display: grid;
+            background-color: var(--light-color);
+            margin-left: 0;
+            margin-right: 0;
+            top: 0;
+            padding: var(--type0);
+            padding-bottom: 1fr;
+        }
+        .actual-card{
+            display: block;
+            position:relative;
+            margin-left: 0;
+            overflow: hidden;
+            border-radius: var(--type0);
+            outline: solid calc(var(--type0)/2) var(--dark-color);
+            background-color: var(--light-color);
+        }
+        .actual-card > img{
+            margin-left: 0;
+            aspect-ratio: 1/1;
+            width: 100%;
+        }
+        .actual-card > div{
+            position:relative;
+        }
+    }
+    .align-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--type2);
+        margin-left: var(--type2);
+        margin-right: var(--type2);
+    }
+    .footer{
+        margin-top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .footer > .ordinaryText{
+        width: calc(var(--type4)*2);
+        margin-right: var(--type1);
+        margin-left: var(--type1);
+    }
+    .footer > a > .logo{
+        margin-left: var(--type1);
+        margin-right: var(--type1);
+    }
+    .footer > a{
+        display: flex;
+    }
+    .noBulletPoint{
+        display: flex;
+        gap: var(--type1);
+    }
+    .visitShopButton::before{
+        content: "choose one of our products in the shop section!";
+    }
+    .headerIcons{
+        height: var(--type2);
+        width: auto;
+    }
+    .studioName{
+        display: grid;
+    }
+    .eliminate1280{
+        display: none;
+    }
+    .appear1280{
+        display: flex;
+        overflow: hidden;
+        justify-self: left;
+        width: 95vw;
+        max-width: 95vw;
+    }
+    .homeRightCol{
+        display: grid;
+        width: 50vw;
+        gap: var(--type2);
+        /* margin-top: calc(var(--type5)*2); */
+    }
+    .homeLeftCol{
+        display: grid;
+        gap: var(--type2);
+        width: 50vw;
+        /* margin-bottom: calc(var(--type5)*2); */
+    }
+    .item0{
+        z-index: 2;
+        margin-left: var(--type5);
+    }
+    .item1{
+        z-index: 1;
+        position: absolute;
+        margin-left: calc(var(--type5) + var(--h4));
+        height: calc(100% - var(--h4) * 2);
+    }
+    .item2{
+        z-index: 0;
+        position: absolute;
+        margin-left: calc(var(--type5) + var(--h4) * 2);
+        height: calc(100% - var(--h4) * 4);
+    }
+    .card-list{
+        display: grid;
+        align-items: center;
+        position: relative;
+        top: 0;
+        justify-self: right;
+        width: 50vw;
+    }
+    .card-list > .item0, .item1, .item2{
+        max-width: 35vw;
+    }
+    .card-list > .item0, .item1{
+        box-shadow: var(--type2) 0 40px -25px;
+    }
+    .picture-description{
+        z-index: 3;
+        width: 20vw;
+        left:var(--type1);
+    }
+    .addCard{
+        display: grid;
+    }
+    .align-cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Na škále od 1 do 10 (deset je blízko panické atace), jak se cítíte po tomhle zážitku 😅 */

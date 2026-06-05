@@ -1,0 +1,33 @@
+/* .card{
+    --light-color:rgb(225,225,225);
+    --dark-color:rgb(26,26,26);
+    --darkGrey-color:rgb(75,75,75);
+    --lightGrey-color:rgb(138,138,138);
+    overflow: hidden;
+    padding-top: 1rem;
+    gap: .5rem;
+    display: grid;
+}
+.card img:not(.arrow){
+    display: block;
+    width: calc(100% - 9rem);
+    margin: 0 auto;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+.card > div{
+    position: relative;
+}
+.price{
+    position: absolute;
+    bottom: 0;
+    width: calc(100% - 9rem);
+    padding-left: 0;
+    padding-right: 0;
+    left: 4.5rem;
+}
+@media screen and (min-width:1280px){
+    .card{
+        background-color: var(--lightGrey-color);
+    }
+} */
