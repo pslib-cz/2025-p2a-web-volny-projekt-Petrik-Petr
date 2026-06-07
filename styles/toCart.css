@@ -1,3 +1,44 @@
+/* .cart1button.active{} */
+/* .cart2button.active{} */
+/* .cart3button.active{} */
+/* .cart4button.active{} */
+/* .cart5button.active{} */
+/* .cart6button.active{} */
+/* .cart7button.active{} */
+/* .cart8button.active{} */
+
 .cart1button.active p{display: none;}
+.cart2button.active p{display: none;}
+.cart3button.active p{display: none;}
+.cart4button.active p{display: none;}
+.cart5button.active p{display: none;}
+.cart6button.active p{display: none;}
+.cart7button.active p{display: none;}
+.cart8button.active p{display: none;}
 
 .cart1button.active .arrow{height: 35px;}
+.cart2button.active .arrow{height: 35px;}
+.cart3button.active .arrow{height: 35px;}
+.cart4button.active .arrow{height: 35px;}
+.cart5button.active .arrow{height: 35px;}
+.cart6button.active .arrow{height: 35px;}
+.cart7button.active .arrow{height: 35px;}
+.cart8button.active .arrow{height: 35px;}
+
+/* .cart1{} */
+/* .cart2{} */
+/* .cart3{} */
+/* .cart4{} */
+/* .cart5{} */
+/* .cart6{} */
+/* .cart7{} */
+/* .cart8{} */
+
+/* .cart1button{} */
+/* .cart2button{} */
+/* .cart3button{} */
+/* .cart4button{} */
+/* .cart5button{} */
+/* .cart6button{} */
+/* .cart7button{} */
+/* .cart8button{} */
