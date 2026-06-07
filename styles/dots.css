@@ -6,7 +6,7 @@
     margin-top: calc(var(--type1)/7.5);
     margin-left: calc(var(--type1)/7.5);
 }
-.dot2.active{
+/* .dot2.active{
     background-color: var(--dark-color);
     height: calc(var(--type1)/4*3);
     width: calc(var(--type1)/4*3);
@@ -69,4 +69,4 @@
 .dot5button{}
 .dot6button{}
 .dot7button{}
-.dot8button{}
+.dot8button{} */
