@@ -36,6 +36,9 @@ body {
     --lightGrey-color:rgb(138,138,138);/*rgb(75,75,75)*/
     --modeIcon:"⏾";/*"☼"*/
     --mode:"Dark mode";/*"Dark mode"*/
+    background-image: url("../styles/background/backgroundD.png");
+    background-size: auto;
+    background-position: center;
 }
 footer{
     margin-top: auto;
